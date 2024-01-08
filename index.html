@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-red-700">
+    <section class="w-[900px] mx-auto">
+        <h1 class="text-5xl text-center text-white my-10">Dashboard</h1>
+        <!-- Display -->
+        <div class="grid grid-cols-3 gap-x-5">
+            <div class="bg-gray-200/50 p-10 rounded text-white text-3xl">
+                <h2>Deposite</h2>
+                <h2>$<span id="deposite-total">00</span></h2>
+            </div>
+            <div class="bg-gray-200/50 p-10 rounded text-white text-3xl">
+                <h2>Withdraw</h2>
+                <h2>$<span id="withdraw-total">00</span></h2>
+            </div>
+            <div class="bg-gray-200/50 p-10 rounded text-white text-3xl">
+                <h2>Balance</h2>
+                <h2>$<span id="balance-total">00</span></h2>
+            </div>
+
+        </div>
+
+        <!-- Inputs -->
+        <div class="grid grid-cols-2 gap-x-5 my-5">
+            <div class="bg-gray-200/50 p-10 rounded">
+                <h2 class="text-white text-xl">Deposite here</h2>
+                <input class="w-full my-2 outline-none p-1" type="text" name="" id="deposite-amount">
+                <button id="deposite-button" class="bg-red-700 rounded text-white px-5 py-1 hover:bg-red-800 transition" >Deposite</button>
+            </div>
+            <div class="bg-gray-200/50 p-10 rounded">
+                <h2 class="text-white text-xl">Withdraw</h2>
+                <input class="w-full my-2 outline-none p-1" type="text" name="" id="withdraw-amount">
+                <button id="withdraw-button" class="bg-red-700 rounded text-white px-5 py-1 hover:bg-red-800 transition" >Withdraw</button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- JS custom files -->
+    <script src="assets/functions.js"></script>
+    <script src="assets/deposite.js"></script>
+    <script src="assets/withdraw.js"></script>
+</body>
+</html>
